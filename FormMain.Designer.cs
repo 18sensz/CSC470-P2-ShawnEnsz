@@ -1,6 +1,6 @@
 ﻿namespace CSC470_P2
 {
-    partial class MainForm
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.walleyeRadioButton = new System.Windows.Forms.RadioButton();
             this.perchRadioButton = new System.Windows.Forms.RadioButton();
             this.crappieRadioButton = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSeeFish = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -50,11 +50,11 @@
             this.groupBox1.Text = "Choose a fish to see";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // radioButton3
+            // walleyeRadioButton
             // 
             this.walleyeRadioButton.AutoSize = true;
             this.walleyeRadioButton.Location = new System.Drawing.Point(3, 62);
-            this.walleyeRadioButton.Name = "radioButton3";
+            this.walleyeRadioButton.Name = "walleyeRadioButton";
             this.walleyeRadioButton.Size = new System.Drawing.Size(63, 17);
             this.walleyeRadioButton.TabIndex = 2;
             this.walleyeRadioButton.TabStop = true;
@@ -62,11 +62,11 @@
             this.walleyeRadioButton.UseVisualStyleBackColor = true;
             this.walleyeRadioButton.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButton2
+            // perchRadioButton
             // 
             this.perchRadioButton.AutoSize = true;
             this.perchRadioButton.Location = new System.Drawing.Point(3, 39);
-            this.perchRadioButton.Name = "radioButton2";
+            this.perchRadioButton.Name = "perchRadioButton";
             this.perchRadioButton.Size = new System.Drawing.Size(53, 17);
             this.perchRadioButton.TabIndex = 1;
             this.perchRadioButton.TabStop = true;
@@ -74,36 +74,36 @@
             this.perchRadioButton.UseVisualStyleBackColor = true;
             this.perchRadioButton.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton1
+            // crappieRadioButton
             // 
             this.crappieRadioButton.AutoSize = true;
             this.crappieRadioButton.Location = new System.Drawing.Point(3, 16);
-            this.crappieRadioButton.Name = "radioButton1";
+            this.crappieRadioButton.Name = "crappieRadioButton";
             this.crappieRadioButton.Size = new System.Drawing.Size(61, 17);
             this.crappieRadioButton.TabIndex = 0;
             this.crappieRadioButton.TabStop = true;
             this.crappieRadioButton.Text = "Crappie";
             this.crappieRadioButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // buttonSeeFish
             // 
-            this.button1.Location = new System.Drawing.Point(150, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "See Fish";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonSeeFish.Location = new System.Drawing.Point(150, 171);
+            this.buttonSeeFish.Name = "buttonSeeFish";
+            this.buttonSeeFish.Size = new System.Drawing.Size(75, 23);
+            this.buttonSeeFish.TabIndex = 1;
+            this.buttonSeeFish.Text = "See Fish";
+            this.buttonSeeFish.UseVisualStyleBackColor = true;
+            this.buttonSeeFish.Click += new System.EventHandler(this.buttonSeeFish_Click);
             // 
-            // MainForm
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(255, 225);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonSeeFish);
             this.Controls.Add(this.groupBox1);
-            this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Name = "FormMain";
+            this.Text = "CSC470 - P2 Shawn Ensz";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -117,7 +117,7 @@
         private System.Windows.Forms.RadioButton walleyeRadioButton;
         private System.Windows.Forms.RadioButton perchRadioButton;
         private System.Windows.Forms.RadioButton crappieRadioButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSeeFish;
         private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }

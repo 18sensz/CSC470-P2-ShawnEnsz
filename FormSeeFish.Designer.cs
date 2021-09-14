@@ -84,7 +84,7 @@
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.fishPictureBox);
             this.Name = "FormSeeFish";
-            this.Text = "FormSeeFish";
+            this.Text = "Keep It or Let It Go";
             this.Load += new System.EventHandler(this.FormSeeFish_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fishPictureBox)).EndInit();
             this.ResumeLayout(false);
