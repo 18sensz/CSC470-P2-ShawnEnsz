@@ -1,0 +1,10 @@
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470-P2.csprojAssemblyReference.cache
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470_P2.MainForm.resources
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470_P2.Properties.Resources.resources
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470-P2.csproj.GenerateResource.cache
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470-P2.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\source\repos\CSC470-P2\bin\Debug\CSC470-P2.exe.config
+C:\Users\Shawn\source\repos\CSC470-P2\bin\Debug\CSC470-P2.exe
+C:\Users\Shawn\source\repos\CSC470-P2\bin\Debug\CSC470-P2.pdb
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470-P2.exe
+C:\Users\Shawn\source\repos\CSC470-P2\obj\Debug\CSC470-P2.pdb
