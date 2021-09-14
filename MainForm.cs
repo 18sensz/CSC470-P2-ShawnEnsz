@@ -39,22 +39,42 @@ namespace CSC470_P2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var selectedFish = Fish.FishType.undefined;
+            var selectedFish = Fish.Undefined;
             if (crappieRadioButton.Checked)
             {
-                selectedFish = Fish.FishType.crappie;
+                selectedFish = Fish.Crappie;
             }
             else if (perchRadioButton.Checked)
             {
-                selectedFish = Fish.FishType.perch;
+                selectedFish = Fish.Perch;
             }
             else if (walleyeRadioButton.Checked)
             {
-                selectedFish = Fish.FishType.walleye;
+                selectedFish = Fish.Walleye;
             }
 
             FormSeeFish fishForm = new FormSeeFish(selectedFish);
             DialogResult result = fishForm.ShowDialog();
+
+            if(result == DialogResult.OK)
+            {
+                switch (fishForm._fishDecision)
+                {
+                    case "throw":
+                        MessageBox.Show("Decision is to Throw it back!");
+                        break;
+                    case "keep":
+                        MessageBox.Show("Decision is to Keep it!");
+                        break;
+                    default:
+                        MessageBox.Show("Invalid Decision!");
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Decision was canceled!");
+            }
         }
     }
 }

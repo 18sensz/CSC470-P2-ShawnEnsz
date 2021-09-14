@@ -13,8 +13,9 @@ namespace CSC470_P2
     public partial class FormSeeFish : Form
     {
 
-        public Fish.FishType _selectedFish;
-        public FormSeeFish(Fish.FishType selectedFish)
+        private Fish _selectedFish;
+        public string _fishDecision;
+        public FormSeeFish(Fish selectedFish)
         {
             InitializeComponent();
             _selectedFish = selectedFish;
@@ -26,24 +27,45 @@ namespace CSC470_P2
             //Show correct image
             switch (_selectedFish)
             {
-                case Fish.FishType.crappie:
-                    pictureBox1.Image = Properties.Resources.Crappie;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                case Fish.Crappie:
+                    fishPictureBox.Image = Properties.Resources.Crappie;
+                    fishPictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
-                case Fish.FishType.perch:
-                    pictureBox1.Image = Properties.Resources.Perch;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                case Fish.Perch:
+                    fishPictureBox.Image = Properties.Resources.Perch;
+                    fishPictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
-                case Fish.FishType.walleye:
-                    pictureBox1.Image = Properties.Resources.Walleye;
-                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+                case Fish.Walleye:
+                    fishPictureBox.Image = Properties.Resources.Walleye;
+                    fishPictureBox.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;     
             }
+        
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
+
+        private void buttonThrowItBack_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            _fishDecision = "throw";
+            this.Close();
+        }
+
+        private void buttonKeepIt_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+            _fishDecision = "keep";
+            this.Close();
         }
     }
 }

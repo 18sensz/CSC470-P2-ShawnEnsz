@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace CSC470_P2
 {
-    public class Fish
+    public enum Fish
     {
-        public enum FishType
-        {
-            undefined,
-            crappie,
-            perch,
-            walleye
-        }
+        Undefined,
+        Crappie,
+        Perch,
+        Walleye
     }
 }
